@@ -1,0 +1,130 @@
+{
+  "dataset": "Indian Pines corrected (200 bands)",
+  "split": "80% train / 20% test, stratified, random_state=42",
+  "n_train": 8199,
+  "n_test": 2050,
+  "OA_pct": 80.68,
+  "AA_pct": 72.48,
+  "kappa": 0.7781,
+  "mean_precision_pct": 78.91,
+  "mean_recall_pct": 72.48,
+  "mean_f1": 0.7432,
+  "pca_n_components": 10,
+  "pca_cumvar_pct": 99.16,
+  "pca_per_component": [
+    83.72,
+    11.55,
+    1.81,
+    0.59,
+    0.52,
+    0.26,
+    0.23,
+    0.21,
+    0.16,
+    0.12
+  ],
+  "timing_seconds": {
+    "preprocessing": 0.2,
+    "rf_training": 4.84,
+    "rf_prediction": 0.13,
+    "total": 5.16
+  },
+  "per_class": {
+    "Alfalfa": {
+      "precision_pct": 66.67,
+      "recall_pct": 22.22,
+      "f1_pct": 33.33,
+      "support": 9
+    },
+    "Corn-notill": {
+      "precision_pct": 73.97,
+      "recall_pct": 75.52,
+      "f1_pct": 74.74,
+      "support": 286
+    },
+    "Corn-mintill": {
+      "precision_pct": 80.6,
+      "recall_pct": 65.06,
+      "f1_pct": 72.0,
+      "support": 166
+    },
+    "Corn": {
+      "precision_pct": 63.89,
+      "recall_pct": 48.94,
+      "f1_pct": 55.42,
+      "support": 47
+    },
+    "Grass-pasture": {
+      "precision_pct": 93.9,
+      "recall_pct": 79.38,
+      "f1_pct": 86.03,
+      "support": 97
+    },
+    "Grass-trees": {
+      "precision_pct": 86.96,
+      "recall_pct": 95.89,
+      "f1_pct": 91.21,
+      "support": 146
+    },
+    "Grass-pasture-mowed": {
+      "precision_pct": 83.33,
+      "recall_pct": 100.0,
+      "f1_pct": 90.91,
+      "support": 5
+    },
+    "Hay-windrowed": {
+      "precision_pct": 92.16,
+      "recall_pct": 97.92,
+      "f1_pct": 94.95,
+      "support": 96
+    },
+    "Oats": {
+      "precision_pct": 50.0,
+      "recall_pct": 25.0,
+      "f1_pct": 33.33,
+      "support": 4
+    },
+    "Soybean-notill": {
+      "precision_pct": 77.89,
+      "recall_pct": 79.9,
+      "f1_pct": 78.88,
+      "support": 194
+    },
+    "Soybean-mintill": {
+      "precision_pct": 78.08,
+      "recall_pct": 87.78,
+      "f1_pct": 82.65,
+      "support": 491
+    },
+    "Soybean-clean": {
+      "precision_pct": 70.45,
+      "recall_pct": 52.1,
+      "f1_pct": 59.9,
+      "support": 119
+    },
+    "Wheat": {
+      "precision_pct": 90.7,
+      "recall_pct": 95.12,
+      "f1_pct": 92.86,
+      "support": 41
+    },
+    "Woods": {
+      "precision_pct": 88.69,
+      "recall_pct": 96.05,
+      "f1_pct": 92.22,
+      "support": 253
+    },
+    "Buildings-Grass-Drives": {
+      "precision_pct": 71.19,
+      "recall_pct": 54.55,
+      "f1_pct": 61.76,
+      "support": 77
+    },
+    "Stone-Steel-Towers": {
+      "precision_pct": 94.12,
+      "recall_pct": 84.21,
+      "f1_pct": 88.89,
+      "support": 19
+    }
+  }
+}

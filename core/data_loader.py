@@ -159,6 +159,9 @@ def load_envi(filepath):
     # Try to read wavelength values from the header
     if hasattr(img, 'bands') and img.bands.centers:
         wavelengths = np.array(img.bands.centers, dtype=np.float32)
+        # convert micrometers to nanometers
+        if wavelengths.max()<10:
+            wavelengths *= 1000.0
     else:
         # If no wavelengths in header, create dummy values 400–2500 nm
         wavelengths = np.linspace(400, 2500, cube.shape[2], dtype=np.float32)

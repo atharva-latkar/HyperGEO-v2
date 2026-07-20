@@ -139,10 +139,12 @@ class BandViewerWidget(QWidget):
         mode = self._current_mode
 
         if mode == 'RGB Composite':
-            from core.data_loader import HyperspectralData
-            d = HyperspectralData()
-            d.cube = self._cube
-            img = d.get_rgb_composite()
+            from core.data_loader import HyperspectralImage
+            d = HyperspectralImage(
+                self._cube,
+                self._wavelengths if self._wavelengths is not None else np.arange(self._cube.shape[2])
+            )
+            img = d.get_rgb_preview()
             self.ax.imshow(img, aspect='auto')
 
         elif mode == 'Single Band':
